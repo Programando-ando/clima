@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="icon" href="img/images.jpg">
+</head>
+<body>
+    <nav class="navbar bg-warning">
+        <div class="container-fluid">
+            <span class="navbar-brand m-auto text-light"><h1>Clima</h1></span>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row w-75 m-auto">
+        <div class="col p-4">
+                <form class="card shadow border p-5">
+
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"><b>Ciudad:</b></label>
+                      <input type="text" class="form-control" id="ciudad">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="pais" class="form-label"><b>Pais:</b></label>
+                      <select name="" id="pais" class="form-control">
+                        <option value="México">México</option>
+                        <option value="España">España</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Argentina">Argentina</option>
+                      </select>
+                    </div>
+
+                    <button type="button" class="btn btn-warning" onclick="consultarAPI()"> <b>Consultar</b> </button>
+
+                  </form>
+            </div>
+            <div class="col shadow-lg border mt-4 text-center" id="divResultado">
+                    <h1 class="m-auto mt-4">Resultado</h1>
+            </div>
+        </div>
+      </div>
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/sweetalert2@11.js"></script>
+      <script src="js/main.js"></script>
+</body>
+</html>
